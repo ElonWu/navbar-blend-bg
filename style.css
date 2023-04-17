@@ -1,0 +1,56 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+  gap: 8px;
+  background: #666666;
+  position: relative;
+}
+
+.navbar li {
+  padding: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar .indicator {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
+  transition: all 0.25s ease-in-out;
+  mix-blend-mode: overlay;
+}
